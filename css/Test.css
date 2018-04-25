@@ -1,0 +1,303 @@
+﻿
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+/* Box Model */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.chs {
+    text-indent: -9999px;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+/* Grid */
+
+body {
+    background: #2e3842;
+}
+
+    body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+        -moz-animation: none !important;
+        -webkit-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important; /*将动画与div元素绑定*/
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+body, input, select, textarea {
+    color: #fff;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 1.65em; /*行高*/
+
+}
+
+a {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    border-bottom: dotted 1px;
+    color: inherit;
+    text-decoration: none;
+}
+
+    a:hover {
+        border-bottom-color: transparent;
+    }
+strong, b {
+    color: #fff;
+    font-weight: 600;
+}
+
+em, i {
+    font-style: italic;
+}
+p {
+    margin: 0 0 2em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: inherit;
+        text-decoration: none;
+    }
+h2 {
+    font-size: 1.35em;
+    line-height: 1.75em;
+}
+h3 {
+    font-size: 1.15em;
+    line-height: 1.75em;
+}
+h4 {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h5 {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+h6 {
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+sub {
+    font-size: 0.8em;
+    position: relative;
+    top: 0.5em;
+}
+
+sup {
+    font-size: 0.8em;
+    position: relative;
+    top: -0.5em;
+}
+
+hr {
+    border: 0;
+    border-bottom: solid 2px #fff;
+    margin: 3em 0;
+}
+
+    hr.major {
+        margin: 4.5em 0;
+    }
+
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
+    ul li {
+        padding-left: 0.5em;
+    }
+    /*banner*/
+    #banner {
+        display: flex;
+        -webkit-flex-direction: column;
+        position: relative;
+        text-align: center; /*让所有文字居中*/
+    }
+
+    #banner h2 {
+        display: inline-block; /*在本行自带换行符*/
+        font-size: 1.75em;
+        opacity: 0.8; /*设置元素的不透明级别*/
+        padding: 0.35em 1em;
+        position: relative;
+        z-index: 1;/*设置图像的优先级，小于零会在文字后面出现*/
+    }
+        #banner h2:before, #banner h2:after {
+            -webkit-transition: width 0.85s ease;
+            transition: width 0.85s ease;
+            -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+            background: #fff;
+            content: '';
+            display: block;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+        }
+        /*重设上下两条线的位置*/
+        #banner h2:before {
+            top: 0;
+            left: 0;
+        }
+        #banner h2:after {
+            bottom: 0;
+            right: 0;
+        }
+    #banner p {
+        letter-spacing: 0.225em; /*设置字母间距*/
+        text-transform: uppercase;/*字母全大写*/
+    }
+        #banner p a {
+            color: inherit;/*让超链接颜色和普通字符相同*/
+        }
+    #banner .more {
+        -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+        -webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+        /*-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;*/
+        transition: transform 0.75s ease, opacity 0.75s ease;
+        -moz-transition-delay: 3.5s;
+        -webkit-transition-delay: 3.5s;
+        /*-ms-transition-delay: 3.5s;*/
+        transition-delay: 3.5s;
+        -moz-transform: translateY(0); /*旋转div元素*/
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        border: none;
+        bottom: 0;
+        color: inherit;
+        font-size: 0.8em;
+        height: 8.5em;
+        left: 50%;
+        letter-spacing: 0.225em;
+        margin-left: -8.5em;
+        opacity: 1;
+        outline: 0;
+        padding-left: 0.225em;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        width: 16em;
+        z-index: 1;
+    }
+        #banner .more:after {
+            background-image: url(/images/BlueSky.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            bottom: 4em;
+            content: '';
+            display: block;
+            height: 1.5em;
+            left: 50%;
+            margin: 0 0 0 -0.75em;
+            position: absolute;
+            width: 1.5em;
+        }
+    #banner :after {
+        pointer-events: none;
+        -moz-transition: opacity 3s ease-in-out;
+        -webkit-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
+        -moz-transition-delay: 1.25s;
+        -webkit-transition-delay: 1.25s;
+        transition-delay: 1.25s;
+        content: '';
+        background: #2e3842;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+body.is-loading #banner h2 {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+body.isloading #banner h2:before, body.isloading #banner h2:after {
+    width: 0;
+}
+
+body.is-loading #banner .more {
+    -moz-transform: translateY(8.5em);
+    -webkit-transform: translateY(8.5em);
+    -ms-transform: translateY(8.5em);
+    transform: translateY(8.5em);
+    opacity: 0;
+}
+
+body.is-loading #banner:after {
+    opacity: 1;
+}
