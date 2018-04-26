@@ -126,6 +126,11 @@ a:visited {
     color: #036;
     width: 12em;
 }
+
+.ul li {
+    border-bottom: 1px solid #000;
+
+}
 /* images */
 img.full {
     width:100%;
