@@ -42,4 +42,9 @@ Partial Class homework_lx4_1_2
             Label2.Text = "alert(未知错误！)"
         End Try
     End Sub
+    Protected Sub btn3_Click(sender As Object, e As EventArgs) Handles btn3.Click
+        Dim d As String = ""
+        d = Mydotsplit(TextBox2.Text)
+        Label1.Text = d
+    End Sub
 End Class
