@@ -6,11 +6,10 @@
     <style type="text/css"></style>
     <link href="../css/mycss.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body onload="Starttime()">
     <div id="container">
         <div id="head">
-            <p><h1><a href="../index.html">Marking Some Food!</a></h1></p>
-            
+            <p><h1 id="Ti" onmouseover="mOver(this)" onmouseout="mOut(this)" onmousedown="mDown(this)" onmouseup="mUp(this)">Marking Some Food!</h1></p>
         </div>
         <div id="nav">
                 <ul class="a">
@@ -25,14 +24,68 @@
                 <iframe id="iframe1" name="Frame" style="top:40; width:100%; height:100%;border:none;">
                     这是一个框架
                 </iframe>
+                
         </div>
         <div id="footer" class="a">
             <a href="https://github.com/" target="_blank">GitHub</a>
             <a href="https://www.zhihu.com/" target="_blank">知乎</a>
             <a href="https://weibo.com/" target="_blank">微博</a>
+            <a id="D"></a>
+
             &copy; Xu Junyi
+            
         </div>
         </div>
 
+        <script>
+            function mOver(obj){
+                    obj.innerHTML = "有本事你点一下！"
+            }
+            function mOut(obj){
+                obj.innerHTML = "Marking Some Food!"
+            }
+            function mDown(obj){
+                obj.innerHTML = "还点？松开试试？"
+            }
+            function mUp(obj){
+                obj.innerHTML = "还真松开了"
+            }
+
+
+
+            //钟表
+            function Starttime(){
+                var weekday=new Array(7);
+                weekday[0]="星期日";
+                weekday[1]="星期一";
+                weekday[2]="星期二";
+                weekday[3]="星期三";
+                weekday[4]="星期四";
+                weekday[5]="星期五";
+                weekday[6]="星期六";
+                var today = new Date();
+                var y = today.getFullYear();
+                var mo = today.getMonth() + 1;
+                var d = today.getDate();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                // add '0' in front of numbers < 10
+                m = checktime(m);
+                s = checktime(s);
+                document.getElementById("D").innerHTML=y + "年" + mo + "月" + d + "日 " + weekday[today.getDay()] + " " + h + ":" + m + ":" + s;
+                t = setTimeout('Starttime()', 500);
+
+            }
+            function checktime(i){
+                if (i<10){
+                    i = '0' + i;
+                    
+                }
+                return i;
+
+            }
+
+        </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 ﻿Imports System.Array
 Imports System.String
+Imports XJY
 
 
 Partial Class aspxpage_Slip
@@ -33,12 +34,12 @@ Partial Class aspxpage_Slip
 
 
         Output.Text = ""
-            For i = 0 To j
-                Output.Text += Sto(i) + "<br/>"
-            Next
+        For i = 0 To j
+            Output.Text += Sto(i) + "<br/>"
+        Next
 
 
-        End Sub
+    End Sub
     Protected Sub Rank_Click(sender As Object, e As EventArgs) Handles Rank.Click
         Dim Input As String = InputStr.Text
         Dim Bar As String = TrennenBar.Text
@@ -83,4 +84,6 @@ Partial Class aspxpage_Slip
 
 
     End Sub
+
 End Class
+
