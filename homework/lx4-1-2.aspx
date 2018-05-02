@@ -34,7 +34,7 @@
                     <asp:Label ID="Label2" runat ="server"></asp:Label>
                 </p>
                 <p>
-                    <asp:Button ID="btn3" runat="server" Text="取后缀" />
+                    <asp:Button ID="btn3" runat="server" Text="取后缀（在用户名处输入文件名）" />
                 </p>
             </div>
         </div>
