@@ -8,8 +8,8 @@
 <body>
     <div id="container">
         <div id="list">
-            <h2>作业：</h2>
-            <ul class="a ul">
+            <h2 class="flip">作业：</h2>
+            <ul class="a ul panel" style="display:none;">
                 <li><a href="../homework/lx3-1.aspx" target="Works">lx3-1:九九乘法表</a></li>
                 <li><a href="../homework/Slip.aspx" target="Works" >lx3-2:字符串分割</a></li>
                 <li><a href="../homework/lx4-1-2.aspx" target="Works" >lx4-1:验证码</a></li>
@@ -20,7 +20,14 @@
             <iframe name="Works" style="width:90%; height:90%;border:none;"></iframe>
         </div>
     </div>
-    
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+        $(".flip").click(function(){
+            $(".panel").slideToggle("slow");
+          });
+        });
+    </script>
 </body>
 
 </html>
