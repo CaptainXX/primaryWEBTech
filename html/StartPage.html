@@ -21,15 +21,10 @@
                 <li><a href="../html/BlackMap.html" target="Frame">黑名单地图</a></li>
                 <li><a href="../html/WhiteMap.html" target="Frame">推荐地图</a></li>
                 <li><a href="../html/Author.html" target="Frame">作者信息</a></li>
-                <li><a onclick="turnPage('..html/homework.html')">作业</a></li>
+                <li><a href="../html/homework.html" target="Frame">作业</a></li>
             </ul>
             <p id="D"></p>
         </div>
-
-        <div id="content">
-
-        </div>
-        
         <div id="main">
             <iframe id="iframe1" src="../html/BlackMap.html" name="Frame" scrolling="no" style="height: 80%;width:60%;margin: 0;float: left;border:none;">
                 这是一个框架
@@ -160,6 +155,10 @@
                 }
             })
         }
+
+        $('#test').load('homeworl.html',function(){
+            alert('已执行');
+        });
     </script>
 </body>
 </html>
