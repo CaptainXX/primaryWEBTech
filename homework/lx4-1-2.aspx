@@ -18,7 +18,7 @@
                 <p>验证码(区分大小写)：</p>
                 <p><asp:Button ID="btn" runat ="server" Text="确定" /></p>
             </div>
-            <div style="left">
+            <div style="float:left">
                 <p>
                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 </p>
