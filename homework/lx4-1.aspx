@@ -13,12 +13,11 @@
             <p>请选择年月日：</p>
             <p>
                 
-                <asp:DropDownList ID="DDL1" AutoPostBack="true" runat="server">
-                    <asp:ListItem>2018</asp:ListItem>
+                <asp:DropDownList ID="DDL1" runat="server" AutoPostBack="True">
                 </asp:DropDownList>年
-                <asp:DropDownList ID="DDL2" AutoPostBack="true" runat="server">                  
+                <asp:DropDownList ID="DDL2" runat="server" AutoPostBack="True">                  
                 </asp:DropDownList>月
-                <asp:DropDownList ID="DDL3" AutoPostBack="true" runat="server">
+                <asp:DropDownList ID="DDL3" runat="server">
                 </asp:DropDownList>日
             </p>
             <p>
