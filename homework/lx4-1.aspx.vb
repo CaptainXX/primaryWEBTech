@@ -1,7 +1,6 @@
 ﻿Imports XJY
 Partial Class homework_lx4_1
     Inherits System.Web.UI.Page
-
     Sub cy()
         Dim y As Single
         For y = 1970 To Now.Year
@@ -40,7 +39,6 @@ Partial Class homework_lx4_1
             Label1.Text = "错误重现"
         End Try
     End Sub
-
     Protected Sub Today_Click(sender As Object, e As EventArgs) Handles Today.Click
         Dim y As String = Now.Year
         Dim m As String = Now.Month
@@ -48,7 +46,6 @@ Partial Class homework_lx4_1
         DDL1.SelectedItem.Text = y
         DDL2.SelectedItem.Text = m
         DDL3.SelectedItem.Text = d
-
     End Sub
     Protected Sub Confirm_Click(sender As Object, e As EventArgs) Handles Confirm.Click
         Try
@@ -57,11 +54,8 @@ Partial Class homework_lx4_1
             Label1.Text = "请正确选择日期！"
         End Try
     End Sub
-
     Protected Sub DDL1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL1.SelectedIndexChanged
         cy()
-
-
     End Sub
     Protected Sub DDL2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL2.SelectedIndexChanged
         cm()
