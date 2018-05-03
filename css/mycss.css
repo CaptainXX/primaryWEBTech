@@ -37,13 +37,19 @@ ul {
     background-color: #7bbfea;
     border-bottom: 1px solid #036;
 }
+    #footer a,
     #nav a {
         display: block;
         font-weight: bold;
     }
+    #footer a:link,
+    #footer a:visited,
     #nav ul a:link,
     #nav ul a:visited {
         color: #fff;
+    }
+    #footer a:hover,{
+        color: #7bbfea;
     }
     #nav ul a:hover,
     #nav ul a:active {
