@@ -15,6 +15,11 @@
             <br />
             <asp:Label ID="Nine_Table" runat ="server" Text="">九九乘法表</asp:Label>
         </div>
+        <div>
+            <asp:Button ID="btn1" runat="server" Text="代码" />
+            <br />
+            <asp:Label ID="Label1" runat ="server" Text="Language='VB'"></asp:Label>
+        </div>
     </form>
 </body>
 </html>
