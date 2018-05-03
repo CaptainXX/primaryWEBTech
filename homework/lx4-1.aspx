@@ -32,6 +32,11 @@
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 
             </p>
+            <p>
+                <asp:Button ID="Button1" runat="server" Text="代码" />
+                <br />
+                <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+            </p>
         </div>
     </form>
 </body>

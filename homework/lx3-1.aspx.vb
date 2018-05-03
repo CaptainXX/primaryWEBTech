@@ -15,9 +15,8 @@ Partial Class homework_lx3_1
     End Sub
     Protected Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
         Label1.Text = "<xmp>"
-        Dim add As String = System.Environment.CurrentDirectory
-        Label1.Text += MyFileReader("D:\1tongji\1计算机\WEB技术基础\primaryWEBTech\homework\lx3-1.aspx.vb")
+        Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
+        Label1.Text += MyFileReader(add + "\homework\lx3-1.aspx.vb")
         Label1.Text += "</xmp>"
-        Label1.Text = add
     End Sub
 End Class

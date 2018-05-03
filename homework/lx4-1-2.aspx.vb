@@ -47,4 +47,10 @@ Partial Class homework_lx4_1_2
         d = Mydotsplit(TextBox2.Text)
         Label1.Text = d
     End Sub
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Label3.Text = "<xmp>"
+        Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
+        Label3.Text += MyFileReader(add + "\homework\lx3-1.aspx.vb")
+        Label3.Text += "</xmp>"
+    End Sub
 End Class

@@ -19,7 +19,10 @@
             <asp:Button ID="Rank" runat="server" Text="排序" /> 
             <br />
             <asp:Label ID="Output" runat="server" Text=""></asp:Label>
-            
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="代码" /> 
+            <br />
+            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>

@@ -1,4 +1,4 @@
-﻿
+﻿Imports XJY
 Partial Class homework_lx4_1
     Inherits System.Web.UI.Page
 
@@ -75,5 +75,11 @@ Partial Class homework_lx4_1
             cm()
             cd()
         End If
+    End Sub
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Label2.Text = "<xmp>"
+        Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
+        Label2.Text += MyFileReader(add + "\homework\lx3-1.aspx.vb")
+        Label2.Text += "</xmp>"
     End Sub
 End Class
