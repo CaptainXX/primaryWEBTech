@@ -37,7 +37,9 @@ ul {
     background-color: #7bbfea;
     border-bottom: 1px solid #036;
 }
-    #footer a,
+    #footer a{
+        font-weight: bold;
+    }
     #nav a {
         display: block;
         font-weight: bold;
@@ -79,7 +81,7 @@ ul {
     display: block;
     background-color: #2a5caa;
     width: 80%;
-    height: 3em;
+    height: 2.5em;
     margin: 0 auto;
     color: #fff;
 }
