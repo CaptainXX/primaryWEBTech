@@ -6,7 +6,6 @@
     <style type="text/css"></style>
     <link href="../css/mycss.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     
 </head>
 <body onload="Starttime()">
@@ -18,64 +17,20 @@
 
         <div id="nav">
             <ul class="a">
-                <li><a href="../html/BlackMap.html" target="Frame">黑名单地图</a></li>
-                <li><a href="../html/WhiteMap.html" target="Frame">推荐地图</a></li>
-                <li><a href="../html/Author.html" target="Frame">作者信息</a></li>
-                <li><a href="../html/homework.html" target="Frame">作业</a></li>
+                <li><a href="../html/README.html" target="Frame">首页</a></li>
+                <li><a href="../html/BlackMap.html" target="Frame">地图</a></li>
+                <li><a onclick="turnPage('../html/homework.html', 'nav2')">作业</a></li>
+                <li><a href="../html/Author.html" target="Frame">关于本站</a></li>                
             </ul>
             <p id="D"></p>
         </div>
+        <div id="nav2">
+            <ul class="a">
+                <li><a href="../html/README.html" target="Frame">首页</a></li>
+            </ul>
+        </div>
         <div id="main">
-            <div style="height: 80%;width:60%;float: left;">
-                <iframe id="iframe1" src="../html/BlackMap.html" name="Frame" scrolling="auto" style="width: 100%;height: 100%;margin: 0;border:none;"></iframe>
-            </div>
-            <div style="width:40%;margin:0;float: left;">
-                <div class="carousel slide" id="slidershow" data-ride="carousel" style="width:100%;margin:0;">
-                    <!-- 设置图片轮播顺序 -->
-                    <ol class="carousel-indicators">
-                        <li class="active" data-target="#slidershow" data-slide-to="0"></li>
-                        <li data-target="#slidershow" data-slide-to="1"></li>
-                        <li data-target="#slidershow" data-slide-to="2"></li>
-                    </ol>
-                    <!-- 设置轮播图片 -->
-                    <div class="carousel-inner" >
-                        <div class="item active">
-                            <img src="../images/slide1.jpg" alt="" style="width:100%;" />
-                            <!-- 添加图片标题和内容 -->
-                            <div class="carousel-caption">
-                                <h4>have</h4>
-                                <p>Blur</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../images/slide2.jpg" alt="" style="width:100%;" />
-                            <!-- 添加图片标题和内容 -->
-                            <div class="carousel-caption">
-                                <h4>a</h4>
-                                <p>Blur</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../images/slide3.jpg" alt="" style="width:100%;" />
-                            <!-- 添加图片标题和内容 -->
-                            <div class="carousel-caption">
-                                <h4>Goodday</h4>
-                                <p>Blur</p>
-                            </div>
-                        </div>
-                        <div>
-                            <!-- 设置图片轮播控制器 -->
-                            <a href="#slidershow" data-slide="prev" class="left carousel-control" role="button">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a href="#slidershow" data-slide="next" class="right carousel-control" role="button">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+                <iframe id="iframe1" src="../html/README.html" name="Frame" scrolling="auto" style="width: 100%;height: 100%;margin: 0;border:none;"></iframe>         
         </div>
 
         <div id="footer" class="a">
@@ -84,84 +39,12 @@
         </div>
     </div>
 
-    <script>
-        function mOver(obj){
-                obj.innerHTML = "有本事你点一下！"
-        }
-        function mOut(obj){
-            obj.innerHTML = "Marking Some Food!"
-        }
-        function mDown(obj){
-            obj.innerHTML = "松开试试？"
-        }
-        function mUp(obj){
-            obj.innerHTML = "苟利国家生死以"
-        }
-
-        //钟表
-        function Starttime(){
-            var weekday=new Array(7);
-            weekday[0]="星期日";
-            weekday[1]="星期一";
-            weekday[2]="星期二";
-            weekday[3]="星期三";
-            weekday[4]="星期四";
-            weekday[5]="星期五";
-            weekday[6]="星期六";
-            var today = new Date();
-            var y = today.getFullYear();
-            var mo = today.getMonth() + 1;
-            var d = today.getDate();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
-            // add '0' in front of numbers < 10
-            m = checktime(m);
-            s = checktime(s);
-            document.getElementById("D").innerHTML=y + "年" + mo + "月" + d + "日 " + weekday[today.getDay()] + "<br />" + " " + h + ":" + m + ":" + s;
-            t = setTimeout('Starttime()', 500);
-
-        }
-        function checktime(i){
-            if (i<10){
-                i = '0' + i;
-                
-            }
-            return i;
-
-        }
-
-    </script>
     <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/myjs.js"></script>
     <!--
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     -->
-    <script>
-        function turnPage(url){
-            $.ajax({
-                type:"post",
-                url:url,
-                success:function(html){
-                    $("#content").html(html);
-                },
-                error:function(XMLHttpRequest, textStatus, errorThrown){
-                    // 状态码
-                    console.log(XMLHttpRequest.status);
-                    // 状态
-                    console.log(XMLHttpRequest.readyState);
-                    // 错误信息   
-                    console.log(textStatus);
-
-                    console.log(errorThrown);
-                }
-            })
-        }
-
-        $('#test').load('homeworl.html',function(){
-            alert('已执行');
-        });
-    </script>
 </body>
 </html>
