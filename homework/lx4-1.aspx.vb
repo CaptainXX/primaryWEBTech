@@ -81,6 +81,10 @@ Partial Class homework_lx4_1
         DDL2_SelectedIndexChanged(sender, e)
     End Sub
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If Label1.Text <> "" Then
+            Label1.Text = ""
+            Return
+        End If
         Label2.Text = "<xmp>"
         Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
         Label2.Text += MyFileReader(add + "\homework\lx4-1.aspx.vb")

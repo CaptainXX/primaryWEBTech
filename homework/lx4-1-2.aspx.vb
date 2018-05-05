@@ -44,6 +44,10 @@ Partial Class homework_lx4_1_2
         Label1.Text = d
     End Sub
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If Label1.Text <> "" Then
+            Label1.Text = ""
+            Return
+        End If
         Label3.Text = "<xmp>"
         Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
         Label3.Text += MyFileReader(add + "\homework\lx4-1-2.aspx.vb")

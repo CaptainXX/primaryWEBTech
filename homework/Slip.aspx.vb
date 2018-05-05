@@ -66,6 +66,10 @@ Partial Class aspxpage_Slip
         Next
     End Sub
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If Label1.Text <> "" Then
+            Label1.Text = ""
+            Return
+        End If
         Label1.Text = "<xmp>"
         Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
         Label1.Text += MyFileReader(add + "\homework\Slip.aspx.vb")

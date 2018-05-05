@@ -18,7 +18,7 @@
         <div>
             <asp:Button ID="btn1" runat="server" Text="代码" />
             <br />
-            <asp:Label ID="Label1" runat ="server" Text="Language='VB'"></asp:Label>
+            <asp:Label ID="Label1" runat ="server" Text=""></asp:Label>
         </div>
     </form>
 </body>
