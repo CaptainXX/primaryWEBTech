@@ -62,7 +62,6 @@ Partial Class aspxpage_Slip
             If SSto(i) <> 0 Then
                 Output.Text += Str(SSto(i)) + " "
             End If
-
         Next
     End Sub
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

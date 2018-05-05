@@ -38,10 +38,10 @@
                 </p>
             </div>
         </div>
-        <div>
+        <div style="display: block;">
             <asp:Button ID="Button1" runat ="server" Text="代码" />
             <br />
-            <asp:Label ID="Label3" runat ="server"></asp:Label>
+            <asp:Label ID="Label3" runat ="server" Text=""></asp:Label>
         </div>
     </form>
 </body>
