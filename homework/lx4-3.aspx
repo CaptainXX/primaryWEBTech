@@ -98,7 +98,11 @@
             <asp:Panel ID="Pnl3" runat="server">
                 <p>上传成功！</p>
                     <asp:Button ID="Button3" runat="server" Text="返回，继续上传" />
-                
+                <p>
+                    <asp:Button ID="btncode" runat="server" Text="代码" />
+                    <br />
+                    <asp:Label ID="lbcode" runat="server" Text=""></asp:Label>
+                </p>
             </asp:Panel>
         </div>
     </form>

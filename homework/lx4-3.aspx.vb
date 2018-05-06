@@ -61,4 +61,14 @@ Partial Class homework_lx4_3
         Pnl2.Visible = True
         Pnl3.Visible = False 
     End Sub
+    Protected Sub btncode_Click(sender As Object, e As EventArgs) Handles btncode.Click
+        If lbcode.Text <> "" Then
+            lbcode.Text = ""
+            Return
+        End If
+        lbcode.Text = "<xmp>"
+        Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
+        lbcode.Text += MyFileReader(add + "\homework\lx4-2.aspx.vb")
+        lbcode.Text += "</xmp>"
+    End Sub
 End Class
