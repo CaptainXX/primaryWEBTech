@@ -34,4 +34,14 @@ Public Class XJY
         Return content
     End Function
 
+    Shared Function MyRandString(ByVal d As Integer) As String ' 产生d位随机字符串，并返回字符串的值
+        Dim RS As String = ""
+        Dim i As Integer
+        For i = 1 To d
+            RS += Myrandstr()
+        Next
+        Return RS
+    End Function
+
+
 End Class
