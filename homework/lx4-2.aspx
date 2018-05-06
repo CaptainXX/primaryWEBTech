@@ -6,6 +6,12 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style>
+            @font-face{
+                src:url("../fonts/Ubuntu-M.ttf");
+                font-family: Ubuntu-M;
+            }
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,7 +24,7 @@
                 <li>姓  名： <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                     <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                 </li>
-                <li>验证码：<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <li>验证码：<asp:TextBox ID="TextBox3" runat="server" style="font-family: Ubuntu-M, 'Courier New', Courier, monospace"></asp:TextBox>
                     <asp:Button ID="Button2" runat="server" Text="" />
                     <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
                 </li>
