@@ -1,19 +1,12 @@
 ﻿Imports XJY
 Partial Class homework_lx4_1_2
     Inherits System.Web.UI.Page
-    Sub xs()
-        Label1.Text = ""
-        Dim i As Integer
-        For i = 1 To 4
-            Label1.Text += Myrandstr()
-        Next
-    End Sub
     Protected Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
-        xs()
+        Label1.Text = MyRandString(4)
     End Sub
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         If Not Page.IsPostBack Then
-            xs()
+            Label1.Text = MyRandString(4)
         End If
     End Sub
     Protected Sub btn_Click(sender As Object, e As EventArgs) Handles btn.Click
