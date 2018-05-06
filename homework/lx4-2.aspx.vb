@@ -31,4 +31,14 @@ Partial Class homework_lx4_2
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Button2.Text = MyRandString(6)
     End Sub
+    Protected Sub btncode_Click(sender As Object, e As EventArgs) Handles btncode.Click
+        If lbcode.Text <> "" Then
+            lbcode.Text = ""
+            Return
+        End If
+        lbcode.Text = "<xmp>"
+        Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
+        lbcode.Text += MyFileReader(add + "\homework\lx4-2.aspx.vb")
+        lbcode.Text += "</xmp>"
+    End Sub
 End Class

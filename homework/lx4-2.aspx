@@ -24,8 +24,8 @@
                 <li>姓  名： <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                     <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                 </li>
-                <li>验证码：<asp:TextBox ID="TextBox3" runat="server" style="font-family: Ubuntu-M, 'Courier New', Courier, monospace"></asp:TextBox>
-                    <asp:Button ID="Button2" runat="server" Text="" />
+                <li>验证码：<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <asp:Button ID="Button2" runat="server" Text="" style="font-family: Ubuntu-M, 'Courier New', Courier, monospace" />
                     <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
                 </li>
                 <li>专  业：
@@ -39,6 +39,11 @@
                 <li>
                     <asp:Button ID="Button1" runat="server" Text="下一步" />
                 </li>
+                <p>
+                    <asp:Button ID="btncode" runat="server" Text="代码" />
+                    <br />
+                    <asp:Label ID="lbcode" runat="server" Text=""></asp:Label>
+                </p>
             </ul>
         </div>
     </form>
