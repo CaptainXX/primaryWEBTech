@@ -31,7 +31,7 @@ Public Class XJY
             content += filecont + vbCrLf
         Loop Until filecont = ""
         Reader.Close() '关闭StreamReader对象
-        Return content
+        Return "<xmp>" + content + "</xmp>"
     End Function
 
     Shared Function MyRandString(ByVal d As Integer) As String ' 产生d位随机字符串，并返回字符串的值
