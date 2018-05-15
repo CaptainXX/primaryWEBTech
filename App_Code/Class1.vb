@@ -29,7 +29,7 @@ Public Class XJY
         Do '按行循环读取文件内容
             filecont = Reader.ReadLine()
             content += filecont + vbCrLf
-        Loop Until filecont = ""
+        Loop Until Reader.EndOfStream
         Reader.Close() '关闭StreamReader对象
         Return "<xmp>" + content + "</xmp>"
     End Function
