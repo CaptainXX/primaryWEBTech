@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="width:100%">
             <p>用户登陆</p>
             <div style="float:left">
                 <p>用户名：</p>
