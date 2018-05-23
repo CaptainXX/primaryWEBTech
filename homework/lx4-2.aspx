@@ -15,7 +15,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="padding:20px;">
             <h3>第一步：输入个人信息：</h3>
             <ul style="list-style: none;">
                 <li>学  号： <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>

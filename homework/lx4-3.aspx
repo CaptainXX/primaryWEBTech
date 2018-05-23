@@ -16,18 +16,20 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="padding:20px">
             <asp:Panel ID="Pnl1" runat="server">
                 <h3>第一步：输入个人信息：</h3>
                 <ul style="list-style: none;">
-                    <li>学  号： <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <li>学  号：
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                         <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                     </li>
-                    <li>姓  名： <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <li>姓  名：
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                         <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
                     </li>
                     <li>验证码：<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                        <asp:Button ID="Button2" runat="server" Text="" style="font-family: Ubuntu-M, 'Courier New', Courier, monospace"/>
+                        <asp:Button ID="Button2" runat="server" Text="" Style="font-family: Ubuntu-M, 'Courier New', Courier, monospace" />
                         <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
                     </li>
                     <li>专  业：
@@ -59,25 +61,25 @@
                     <tr>
                         <td>2</td>
                         <td>
-                            <asp:RadioButton ID="RadioButton2" runat="server" GroupName="Hw" Text="HTML网页的编写与调试"/>
+                            <asp:RadioButton ID="RadioButton2" runat="server" GroupName="Hw" Text="HTML网页的编写与调试" />
                         </td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>
-                            <asp:RadioButton ID="RadioButton3" runat="server" GroupName="Hw" Text="ASP.NET程序设计基础"/>
+                            <asp:RadioButton ID="RadioButton3" runat="server" GroupName="Hw" Text="ASP.NET程序设计基础" />
                         </td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>
-                            <asp:RadioButton ID="RadioButton4" runat="server" GroupName="Hw" Text="WEB服务器基本控件的设置和使用"/>
+                            <asp:RadioButton ID="RadioButton4" runat="server" GroupName="Hw" Text="WEB服务器基本控件的设置和使用" />
                         </td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>
-                            <asp:RadioButton ID="RadioButton5" runat="server" GroupName="Hw" Text="内部对象的设计和使用"/>
+                            <asp:RadioButton ID="RadioButton5" runat="server" GroupName="Hw" Text="内部对象的设计和使用" />
                         </td>
                     </tr>
                     <tr>
@@ -88,7 +90,7 @@
                                 <asp:Button ID="Fbtn" runat="server" Text="完成" />
                                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                             </p>
-                            
+
                             <p>*当本文件名和你已上传的文件重名时将覆盖原有文件！</p>
                             <p>*文件最大为5M</p>
                         </td>
@@ -97,7 +99,7 @@
             </asp:Panel>
             <asp:Panel ID="Pnl3" runat="server">
                 <p>上传成功！</p>
-                    <asp:Button ID="Button3" runat="server" Text="返回，继续上传" />
+                <asp:Button ID="Button3" runat="server" Text="返回，继续上传" />
                 <p>
                     <asp:Button ID="btncode" runat="server" Text="代码" />
                     <br />
