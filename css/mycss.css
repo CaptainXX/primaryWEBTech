@@ -146,7 +146,25 @@ h3 {
 }
 
 #login {
-    float: left;
+    position: absolute;
+    right: 10%;
+    top: 3%;
+}
+
+#login a,
+#login a:link,
+#login a:visited{
+    background-color: #7bbfea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#login a:hover,
+#login a:active{
+    background-color: #036;
 }
 
 #footer {
