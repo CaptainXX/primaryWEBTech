@@ -13,23 +13,23 @@ headers = {"Authorization": "-"} # token push前请更改
 
 response = requests.get("https://api.github.com/repos/CaptainXX/primaryWEBTech/commits", headers=headers)
 r = response.json()
-with open("../response.json", "w") as j:
-    j.truncate()
-    j.write("[")
 
-if response.status_code == 200:    
-    for i in range(0, 3):
+if response.status_code == 200:
+    log = {}   
+    for i in range(0, 5):
+        log[i] = {}
+        log[i]["commit"] = r[i]["sha"]
+        log[i]["author"] = r[i]["commit"]["author"]["name"]
+        log[i]["date"] = r[i]["commit"]["author"]["date"]
+        log[i]["message"] = r[i]["commit"]["message"]
         print(i)
         print("sha:", r[i]["sha"])
         print("author:", r[i]["commit"]["author"]["name"])
         print("date:", r[i]["commit"]["author"]["date"])
         print("message:", r[i]["commit"]["message"])
-        with open("../response.json", "a") as j:
-            json.dump(r[i], j)
-            if i != 2:
-                j.write(",")
-    with open("../response.json", "a") as j:
-        j.write("]")
+    print(json.dumps(log, ensure_ascii=False))
+    with open("../response.json", "w", encoding='utf-8') as j:
+        j.write(json.dumps(log, ensure_ascii=False, indent=4))
     print("文件写入完成")
 else:
     print(response.status_code)

@@ -1,220 +1,32 @@
-[{
-    "sha": "d8015820824a50540b899c7e479d85b46fe3efb0",
-    "commit": {
-        "author": {
-            "name": "CaptainXX",
-            "email": "670909183@qq.com",
-            "date": "2018-05-23T02:19:39Z"
-        },
-        "committer": {
-            "name": "CaptainXX",
-            "email": "670909183@qq.com",
-            "date": "2018-05-23T02:19:39Z"
-        },
-        "message": "\u66f4\u6539Readme",
-        "tree": {
-            "sha": "f4796b52c3da06ffe5b704b85617d22fa7328e52",
-            "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/git/trees/f4796b52c3da06ffe5b704b85617d22fa7328e52"
-        },
-        "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/git/commits/d8015820824a50540b899c7e479d85b46fe3efb0",
-        "comment_count": 0,
-        "verification": {
-            "verified": false,
-            "reason": "unsigned",
-            "signature": null,
-            "payload": null
-        }
+{
+    "0": {
+        "commit": "ba67e5680f357ddc802ddc48d29afc8a1d432745",
+        "author": "CaptainXX",
+        "date": "2018-05-23T09:42:40Z",
+        "message": "增加登录按钮"
     },
-    "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/d8015820824a50540b899c7e479d85b46fe3efb0",
-    "html_url": "https://github.com/CaptainXX/primaryWEBTech/commit/d8015820824a50540b899c7e479d85b46fe3efb0",
-    "comments_url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/d8015820824a50540b899c7e479d85b46fe3efb0/comments",
-    "author": {
-        "login": "CaptainXX",
-        "id": 32472520,
-        "avatar_url": "https://avatars3.githubusercontent.com/u/32472520?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/CaptainXX",
-        "html_url": "https://github.com/CaptainXX",
-        "followers_url": "https://api.github.com/users/CaptainXX/followers",
-        "following_url": "https://api.github.com/users/CaptainXX/following{/other_user}",
-        "gists_url": "https://api.github.com/users/CaptainXX/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/CaptainXX/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/CaptainXX/subscriptions",
-        "organizations_url": "https://api.github.com/users/CaptainXX/orgs",
-        "repos_url": "https://api.github.com/users/CaptainXX/repos",
-        "events_url": "https://api.github.com/users/CaptainXX/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/CaptainXX/received_events",
-        "type": "User",
-        "site_admin": false
+    "1": {
+        "commit": "a9364349faac89f18f4d98617ca478075cb65fe9",
+        "author": "CaptainXX",
+        "date": "2018-05-23T09:27:56Z",
+        "message": "新作业"
     },
-    "committer": {
-        "login": "CaptainXX",
-        "id": 32472520,
-        "avatar_url": "https://avatars3.githubusercontent.com/u/32472520?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/CaptainXX",
-        "html_url": "https://github.com/CaptainXX",
-        "followers_url": "https://api.github.com/users/CaptainXX/followers",
-        "following_url": "https://api.github.com/users/CaptainXX/following{/other_user}",
-        "gists_url": "https://api.github.com/users/CaptainXX/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/CaptainXX/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/CaptainXX/subscriptions",
-        "organizations_url": "https://api.github.com/users/CaptainXX/orgs",
-        "repos_url": "https://api.github.com/users/CaptainXX/repos",
-        "events_url": "https://api.github.com/users/CaptainXX/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/CaptainXX/received_events",
-        "type": "User",
-        "site_admin": false
+    "2": {
+        "commit": "be50f9bb21c2a7dd44b160336b74fc880e07c5ab",
+        "author": "CaptainXX",
+        "date": "2018-05-23T09:27:48Z",
+        "message": "使用BootStrap样式制作了登陆页面"
     },
-    "parents": [{
-        "sha": "b088d710ce5dd477f668e0da6cb33ec6903fc50c",
-        "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/b088d710ce5dd477f668e0da6cb33ec6903fc50c",
-        "html_url": "https://github.com/CaptainXX/primaryWEBTech/commit/b088d710ce5dd477f668e0da6cb33ec6903fc50c"
-    }]
-}, {
-    "sha": "b088d710ce5dd477f668e0da6cb33ec6903fc50c",
-    "commit": {
-        "author": {
-            "name": "CaptainXX",
-            "email": "670909183@qq.com",
-            "date": "2018-05-23T01:59:56Z"
-        },
-        "committer": {
-            "name": "CaptainXX",
-            "email": "670909183@qq.com",
-            "date": "2018-05-23T01:59:56Z"
-        },
-        "message": "\u683c\u5f0f\u5316\u4ee3\u7801",
-        "tree": {
-            "sha": "a0c87b5e6bcdaa0750df4349cccd83e77e844f08",
-            "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/git/trees/a0c87b5e6bcdaa0750df4349cccd83e77e844f08"
-        },
-        "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/git/commits/b088d710ce5dd477f668e0da6cb33ec6903fc50c",
-        "comment_count": 0,
-        "verification": {
-            "verified": false,
-            "reason": "unsigned",
-            "signature": null,
-            "payload": null
-        }
+    "3": {
+        "commit": "30ae25622f5de504ec03303b2ace00f9a24cf437",
+        "author": "CaptainXX",
+        "date": "2018-05-23T09:26:58Z",
+        "message": "调整padding"
     },
-    "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/b088d710ce5dd477f668e0da6cb33ec6903fc50c",
-    "html_url": "https://github.com/CaptainXX/primaryWEBTech/commit/b088d710ce5dd477f668e0da6cb33ec6903fc50c",
-    "comments_url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/b088d710ce5dd477f668e0da6cb33ec6903fc50c/comments",
-    "author": {
-        "login": "CaptainXX",
-        "id": 32472520,
-        "avatar_url": "https://avatars3.githubusercontent.com/u/32472520?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/CaptainXX",
-        "html_url": "https://github.com/CaptainXX",
-        "followers_url": "https://api.github.com/users/CaptainXX/followers",
-        "following_url": "https://api.github.com/users/CaptainXX/following{/other_user}",
-        "gists_url": "https://api.github.com/users/CaptainXX/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/CaptainXX/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/CaptainXX/subscriptions",
-        "organizations_url": "https://api.github.com/users/CaptainXX/orgs",
-        "repos_url": "https://api.github.com/users/CaptainXX/repos",
-        "events_url": "https://api.github.com/users/CaptainXX/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/CaptainXX/received_events",
-        "type": "User",
-        "site_admin": false
-    },
-    "committer": {
-        "login": "CaptainXX",
-        "id": 32472520,
-        "avatar_url": "https://avatars3.githubusercontent.com/u/32472520?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/CaptainXX",
-        "html_url": "https://github.com/CaptainXX",
-        "followers_url": "https://api.github.com/users/CaptainXX/followers",
-        "following_url": "https://api.github.com/users/CaptainXX/following{/other_user}",
-        "gists_url": "https://api.github.com/users/CaptainXX/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/CaptainXX/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/CaptainXX/subscriptions",
-        "organizations_url": "https://api.github.com/users/CaptainXX/orgs",
-        "repos_url": "https://api.github.com/users/CaptainXX/repos",
-        "events_url": "https://api.github.com/users/CaptainXX/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/CaptainXX/received_events",
-        "type": "User",
-        "site_admin": false
-    },
-    "parents": [{
-        "sha": "5123922d7ad133bdc360ffe87152f0ba8646a2ff",
-        "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/5123922d7ad133bdc360ffe87152f0ba8646a2ff",
-        "html_url": "https://github.com/CaptainXX/primaryWEBTech/commit/5123922d7ad133bdc360ffe87152f0ba8646a2ff"
-    }]
-}, {
-    "sha": "5123922d7ad133bdc360ffe87152f0ba8646a2ff",
-    "commit": {
-        "author": {
-            "name": "CaptainXX",
-            "email": "670909183@qq.com",
-            "date": "2018-05-23T01:55:08Z"
-        },
-        "committer": {
-            "name": "CaptainXX",
-            "email": "670909183@qq.com",
-            "date": "2018-05-23T01:55:08Z"
-        },
-        "message": "\u5220\u9664\u591a\u4f59\u4ee3\u7801",
-        "tree": {
-            "sha": "6170ddd1246bb8462f7e5429222ca69591b92515",
-            "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/git/trees/6170ddd1246bb8462f7e5429222ca69591b92515"
-        },
-        "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/git/commits/5123922d7ad133bdc360ffe87152f0ba8646a2ff",
-        "comment_count": 0,
-        "verification": {
-            "verified": false,
-            "reason": "unsigned",
-            "signature": null,
-            "payload": null
-        }
-    },
-    "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/5123922d7ad133bdc360ffe87152f0ba8646a2ff",
-    "html_url": "https://github.com/CaptainXX/primaryWEBTech/commit/5123922d7ad133bdc360ffe87152f0ba8646a2ff",
-    "comments_url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/5123922d7ad133bdc360ffe87152f0ba8646a2ff/comments",
-    "author": {
-        "login": "CaptainXX",
-        "id": 32472520,
-        "avatar_url": "https://avatars3.githubusercontent.com/u/32472520?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/CaptainXX",
-        "html_url": "https://github.com/CaptainXX",
-        "followers_url": "https://api.github.com/users/CaptainXX/followers",
-        "following_url": "https://api.github.com/users/CaptainXX/following{/other_user}",
-        "gists_url": "https://api.github.com/users/CaptainXX/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/CaptainXX/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/CaptainXX/subscriptions",
-        "organizations_url": "https://api.github.com/users/CaptainXX/orgs",
-        "repos_url": "https://api.github.com/users/CaptainXX/repos",
-        "events_url": "https://api.github.com/users/CaptainXX/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/CaptainXX/received_events",
-        "type": "User",
-        "site_admin": false
-    },
-    "committer": {
-        "login": "CaptainXX",
-        "id": 32472520,
-        "avatar_url": "https://avatars3.githubusercontent.com/u/32472520?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/CaptainXX",
-        "html_url": "https://github.com/CaptainXX",
-        "followers_url": "https://api.github.com/users/CaptainXX/followers",
-        "following_url": "https://api.github.com/users/CaptainXX/following{/other_user}",
-        "gists_url": "https://api.github.com/users/CaptainXX/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/CaptainXX/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/CaptainXX/subscriptions",
-        "organizations_url": "https://api.github.com/users/CaptainXX/orgs",
-        "repos_url": "https://api.github.com/users/CaptainXX/repos",
-        "events_url": "https://api.github.com/users/CaptainXX/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/CaptainXX/received_events",
-        "type": "User",
-        "site_admin": false
-    },
-    "parents": [{
-        "sha": "db30700847511edb78164286f9ebaab2cc9e0421",
-        "url": "https://api.github.com/repos/CaptainXX/primaryWEBTech/commits/db30700847511edb78164286f9ebaab2cc9e0421",
-        "html_url": "https://github.com/CaptainXX/primaryWEBTech/commit/db30700847511edb78164286f9ebaab2cc9e0421"
-    }]
-}]
+    "4": {
+        "commit": "3e7d3bd78decde0b31c8d87a744ec98a4300da04",
+        "author": "CaptainXX",
+        "date": "2018-05-23T09:26:40Z",
+        "message": "使用MapPath访问物理路径"
+    }
+}
