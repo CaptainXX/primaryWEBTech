@@ -10,7 +10,7 @@
 
 <body>
     <div id="wrapper">
-        <div class="carousel slide" id="slidershow" data-ride="carousel" style="width:40%;margin:0 20px; float: left;">
+        <div class="carousel slide" id="slidershow" data-ride="carousel" style="width:40%;margin:10px 20px; float: left;">
             <!-- 设置图片轮播顺序 -->
             <ol class="carousel-indicators">
                 <li class="active" data-target="#slidershow" data-slide-to="0"></li>
@@ -56,9 +56,26 @@
         </div>
         <div id="context" style="width: 50%; float: left;">
             <h3>更新记录</h3>
+            <div id="demo">
+
+            </div>
         </div>
     </div>
     <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $.getJSON("../response.json", "", function (data) {
+            var range = "01234";
+            for(i in range){
+                document.getElementById("demo").innerHTML += "Commit: " + data[i].commit + "<br />";
+                document.getElementById("demo").innerHTML += "Author: " + data[i].author + "<br />"
+                document.getElementById("demo").innerHTML += "Date: " + data[i].date + "<br />"
+                document.getElementById("demo").innerHTML += "<b>Message: " + data[i].message + "</b><br /><br />"
+            }
+
+        });
+    </script>
+
 </body>
+
 </html>
