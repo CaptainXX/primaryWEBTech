@@ -80,14 +80,13 @@ Partial Class aspxpage_Slip
 
     End Sub
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
 
         If Label1.Text <> "" Then
             Label1.Text = ""
             Return
         End If
 
-        Label1.Text += MyFileReader(add + "\homework\Slip.aspx.vb")
+        Label1.Text += MyFileReader(MapPath("Slip.aspx.vb"))
 
     End Sub
 End Class

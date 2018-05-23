@@ -96,7 +96,6 @@ Partial Class homework_lx4_1
             Label1.Text = ""
             Return
         End If
-        Dim add As String = HttpRuntime.AppDomainAppPath.ToString()
-        Label2.Text += MyFileReader(add + "\homework\lx4-1.aspx.vb")
+        Label2.Text += MyFileReader(MapPath("lx4-1.aspx.vb"))
     End Sub
 End Class
