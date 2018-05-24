@@ -67,7 +67,7 @@
         $.getJSON("../response.json", "", function (data) {
             var range = "01234";
             for(i in range){
-                document.getElementById("demo").innerHTML += "Commit: " + data[i].commit + "<br />";
+                //document.getElementById("demo").innerHTML += "Commit: " + data[i].commit + "<br />";
                 document.getElementById("demo").innerHTML += "Author: " + data[i].author + "<br />"
                 document.getElementById("demo").innerHTML += "Date: " + data[i].date + "<br />"
                 document.getElementById("demo").innerHTML += "<b>Message: " + data[i].message + "</b><br /><br />"
