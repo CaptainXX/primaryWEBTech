@@ -1,7 +1,7 @@
 import requests
 import json
 
-headers = {"Authorization": "-"} # token push前请更改
+headers = {"Authorization": ""} # token push前请更改
 
 #如果get()方法里没有headers参数，则会返回如下结果：（表示要求认证）
 
