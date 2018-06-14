@@ -5,15 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>聊天室</title>
-   <script type="text/JavaScript">
-	function check_Null(){
-		if (document.form1.user_name.value==""){
-			alert("用户名不能为空!");
-			return false;
-		}
-		return true;
-	}
-	</script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -46,7 +37,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center">
-                    <asp:Button ID="btnlogin" runat="server" Text="登录" OnClientClick="return check_Null(); " />
+                    <asp:Button ID="btnlogin" runat="server" Text="登录"/>
                     <asp:Button ID="Button1" runat="server" Text="退出" CausesValidation="False" /></td>
             </tr>
         </table>

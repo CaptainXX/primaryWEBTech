@@ -51,7 +51,7 @@ Public Class XJY
             myConn.Open()
             Return myConn
         Catch ex As Exception
-            MsgBox(ex.Message & vbCrLf & "数据库连接失败!")
+            System.Diagnostics.Debug.WriteLine(ex.Message + "数据库连接失败!")
             Return Nothing
         End Try
 
@@ -68,7 +68,7 @@ Public Class XJY
 
             Return dr
         Catch ex As Exception
-            MsgBox(ex.Message & vbCrLf & "查询执行失败!")
+            System.Diagnostics.Debug.WriteLine(ex.Message + "查询执行失败!")
             Return Nothing
         End Try
     End Function

@@ -17,7 +17,7 @@ Partial Class chatlogin
     Protected Sub btnlogin_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnlogin.Click
         Dim i As Integer
         Dim userid As String = "root"
-        Dim pwd As String = "*"
+        Dim pwd As String = ""
         Dim dbid As String = "user"
         Dim query As String = "select user_name,user_pwd from user;"
         Dim name As String = ""
