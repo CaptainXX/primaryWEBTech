@@ -43,12 +43,12 @@ Partial Class chatlogin
                 If txtname.Text = name And txtpass.Text = pass Then
                     conn.Close()
                     Session("se_name") = name
-                    Response.Redirect("../chatpic/chat.aspx", False)
+                    Server.Transfer("../chatpic/chat.aspx")
                 End If
             End While
             lblerror.Text = "用户名或密码错！"
         Catch ex As Exception
-            MsgBox(ex.Message + vbCrLf + "查询错误！")
+            System.Diagnostics.Debug.WriteLine(ex.Message + " 查询错误！")
         End Try
 
         'For i = 0 To 2
